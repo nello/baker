@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#landscape {display:none}
+
+.portrait {
+	position: absolute;
+	 top: 0px;
+	 left: 0px;
+	}

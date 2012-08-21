@@ -40,7 +40,7 @@
 
 
 // ALERT LABELS
-#define OPEN_BOOK_MESSAGE       @"Do you want to download %@?"
+#define OPEN_BOOK_MESSAGE       @"Do you want to download "
 #define OPEN_BOOK_CONFIRM       @"Open book"
 
 #define CLOSE_BOOK_MESSAGE      @"Do you want to close this book?"
@@ -626,6 +626,7 @@
     
     if (webViewBackground == nil)
     {
+        //webViewBackground = [UIColor whiteColor];
         webViewBackground = webView.backgroundColor;
         [webViewBackground retain];
     }
@@ -1649,7 +1650,8 @@
             
             if ([[properties get:@"-baker-page-turn-tap", nil] boolValue]) [self changePage:page];
         }
-        else if ((touch.tapCount % 2) == 0) {
+        else {
+        //else if ((touch.tapCount % 2) == 0) {
             NSLog(@"    Multi Tap TOGGLE STATUS BAR");
             [self toggleStatusBar];
         }
@@ -1660,6 +1662,7 @@
     [self hideStatusBar];
     
     currPage.backgroundColor = webViewBackground;
+    //currPage.backgroundColor = [UIColor whiteColor];
     currPage.opaque = YES;
 }
 
@@ -1771,7 +1774,7 @@
     NSLog(@"• Download file %@", URLDownload);
     
     feedbackAlert = [[UIAlertView alloc] initWithTitle:@""
-                                               message:[NSString stringWithFormat:OPEN_BOOK_MESSAGE, URLDownload]
+                                               message:[OPEN_BOOK_MESSAGE stringByAppendingFormat:@"%@?", URLDownload]
                                               delegate:self
                                      cancelButtonTitle:ALERT_FEEDBACK_CANCEL
                                      otherButtonTitles:OPEN_BOOK_CONFIRM, nil];

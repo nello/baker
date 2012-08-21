@@ -1,29 +1,31 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"/>
+<!--this doctype can simply be <HTML> in HTML 5-->
+	
 <html>
 <head>
-    <title>A Study In Scarlet</title>
-    <meta name="viewport" content="width=768; initial-scale=1.0;"/>
-    <link rel="stylesheet" type="text/css" href="css/book.css">
-    <script src="js/blood.js"></script>
-    <script>
-      Blood.init(27, -23, 6000);
-      document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("blood").addEventListener("click", function() { Blood.drop(); });
-    }, false);
-    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- mobile safari specific viewport-->
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>Cover</title>
+    <link rel="stylesheet" media="screen and (orientation:portrait)" href="css/portrait.css">
+    <link rel="stylesheet" media="screen and (orientation:landscape)" href="css/landscape.css">
+	
+	<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+	<script type="text/javascript" src="js/jquery.highlight-3.js"></script>
+	<style type="text/css">
+	body {
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		background-color:#000
+	}
+	</style>
 </head>
 <body>
-    <div id="page" class="cover">
-        <h1><div>A Study in Scarlet</div></h1>
-        <h2>by A. Conan Doyle</h2>
-        <img src="gfx/cover-image.png" class="central" />
-        
-        <div id="blood"></div>
-        
-        <div class="footer">
-            <p>Illustrated by Sidney Paget,  Richard Gutschmidt, Frank Wiles, Frederic Dorr Steele et. al.</p>
-            <a href="http://bakerframework.com/?referrer=Baker"><img src="gfx/baker-badge.png"/></a>
-        </div>
-    </div>
+<div style=max-width:1024px>
+<img src="images/cover_portrait.png" width="768" height="1024" id="portrait" class="landscape">
+<img src="images/cover_landscape.png" width="1024" height="768" id="landscape" class="portrait">
+</div>
 </body>
 </html>

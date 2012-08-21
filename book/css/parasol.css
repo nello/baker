@@ -1,0 +1,155 @@
+P {
+	text-align: left;
+         }
+HR {
+	width: 33%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+       }   
+BODY {
+	margin-left: 50px;
+	margin-bottom: 50px;
+	margin-top: 60px;
+	margin-right: 50px;
+	height: 100%;
+	font-family: "HelveticaNeue-Light", "Heletica-Neue", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: left;
+	color: #000;
+	font-weight: 10;
+	font-style: normal;
+	letter-spacing: 1px;
+	background: url(../images/left.png) left center repeat-y, url(../images/right.png) right center repeat-y;
+    background-color: white;
+	}
+
+.headline {
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: left;
+	text-shadow: 0px 0px 0px gray;
+	color: #009;
+	font-family: "HelveticaNeue-Light", "Heletica-Neue", Helvetica, Arial, sans-serif;
+}
+.banner {
+	position: absolute;
+	 top: 0px;
+	 right: 0px;
+	 -webkit-border-bottom-left-radius: 200;
+	 -webkit-box-shadow: 0px 2px 2px black;
+	}
+.close {
+	float: right;
+	margin: 10px;
+	}
+.bluebold {
+	font-size: 28px;
+	font-weight: bold;
+	color: #00C;
+}
+.bodybold {
+	font-weight: bold;
+}
+
+.floatright {
+	margin: 10px;
+	float: right;
+	-webkit-box-shadow: 2px 2px 5px black;
+}
+.floatleft {
+	margin: 10px;
+	float: left;
+	-webkit-box-shadow: 0px 2px 2px black;
+}
+.floatcenter {
+	margin: 10px;
+	float: center;
+	-webkit-box-shadow: 0px 2px 2px black;
+}
+.aus {
+	margin-right: 10px;
+	float: left;
+}.info {
+	margin: 10px;
+	margin-left: -10px;
+	margin-top:20px;
+	float: left;
+}
+.a_icon {
+	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-left: -10px;
+	float: left;
+}.cross {
+	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-left: -10px;
+	float: left;
+}
+.search {
+	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-left: -10px;
+	float: left;
+}
+.bodyitalic {
+	font-style: oblique;
+}
+.subitalic {
+	font-style: oblique;
+	font-size: 18px;
+}
+.headred {
+	font-size: 24px;
+	color: #F00;
+	font-weight: bold;
+}
+.headredcenter {
+	font-size: 24px;
+	color: #F00;
+	text-align: center;	
+	font-weight: bold;
+}
+.redbold {
+	color: #F00;
+	font-weight: bold;
+}
+.headreditalic {
+	font-size: 24px;
+	color: #F00;
+	font-style: italic;
+}
+
+           
+.bodyboldUline {
+	font-weight: bold;
+	text-decoration:underline;
+}
+.greenbold {
+	font-size: 24px;
+	font-weight: bold;
+	color: #090;
+}
+.bodybolditalic {
+	font-weight: bold;
+	font-style: italic;
+}
+.blue {
+	color: #00C;
+}
+.brightred {
+	color: #F00;
+	font-weight: bold;
+}
+.darkerred {
+	color: #900;
+	font-weight: bold;
+}
+.centre {
+	text-align: center;
+}
