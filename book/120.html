@@ -10,14 +10,16 @@
 	<link href="css/parasol.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.lightbox-0.5css" rel="stylesheet" type="text/css" />
 	
-<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
-<script type="text/javascript" src="js/jquery.highlight-3.js"></script>
-<script type="text/javascript">
-myword = '';
-function highlight(hword){
-$('p').highlight(hword);
-};
-</script>
+    <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="js/jquery.highlight-3.js"></script>
+    <script type="text/javascript">
+        myword = '';
+        function highlight(hword){
+            $('p').highlight(hword);
+        };
+    </script>
+    <script type="text/javascript" src="js/bookmark.js"></script>
+    
 <STYLE TYPE="text/css">
 /*JS highlighting style*/
 .highlight { background-color: yellow }
@@ -25,6 +27,7 @@ $('p').highlight(hword);
 </head>
 <body>
 <div style=max-width:1024px>
+<div id="bookmark"></div>
 <p class="headline"><img src="images/h_intro.png" width="265" height="44" class="banner">Introduction</p>
 <p>Ever wondered what to do in an emergency? Would you know how to treat a family member or friend if they had an accident? In the few precious moments before help arrives, could you save a life?<br>
   <br>

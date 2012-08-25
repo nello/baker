@@ -162,6 +162,7 @@ img.right {
     -o-transition: color 0.4s ease;
     transition: color 0.4s ease;
 }
+
 #page.index .menu li a:hover {
   color: #b50303;
 }
@@ -187,6 +188,28 @@ img.right {
   text-align: justify;
   text-indent: 1em;
   line-height: 1.6em;
+}
+
+
+/****************************************************************************************************
+ * Bookmark icon
+ */
+#bookmark {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 34px;
+    height: 65px;
+    cursor: pointer;
+    background-image: url(../gfx/bookmark.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    z-index: 1337;
+}
+
+#bookmark.isSet {
+    background-position: -34px 0;
 }
 
 

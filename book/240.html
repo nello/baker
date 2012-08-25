@@ -5,19 +5,21 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
     <!-- mobile safari specific viewport-->
-	<meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0, user-scalable=yes" />
 
     <title>The Human Body</title>
-	<link href="css/parasol.css" rel="stylesheet" type="text/css" />
+    <link href="css/parasol.css" rel="stylesheet" type="text/css" />
 	
-<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
-<script type="text/javascript" src="js/jquery.highlight-3.js"></script>
-<script type="text/javascript">
-myword = '';
-function highlight(hword){
-$('p').highlight(hword);
-};
-</script>
+    <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="js/jquery.highlight-3.js"></script>
+    <script type="text/javascript">
+	myword = '';
+	function highlight(hword){
+	    $('p').highlight(hword);
+	};
+    </script>
+    <script type="text/javascript" src="js/bookmark.js"></script>
+
 <STYLE TYPE="text/css">
 /*JS highlighting style*/
 .highlight { background-color: yellow }
@@ -25,6 +27,7 @@ $('p').highlight(hword);
 </head>
 <body>
 	<div style=max-width:1024px>
+    <div id="bookmark"></div>
 		<p class="headline"><img src="images/h_intro.png" width="265" height="44" class="banner">The Human Body  </p>
   <p><br>
   The human body is composed of a number of <span class="bodybold">'systems'</span>, each with a specific role in the function of the body as a whole.<br>

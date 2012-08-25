@@ -87,6 +87,7 @@
     CGRect downTapArea;
     CGRect leftTapArea;
     CGRect rightTapArea;
+    CGRect controlsTapArea;
     
     int totalPages;
     int lastPageNumber;

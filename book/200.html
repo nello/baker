@@ -10,14 +10,17 @@
 	<link href="css/parasol.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.lightbox-0.5css" rel="stylesheet" type="text/css" />
 	
-<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
-<script type="text/javascript" src="js/jquery.highlight-3.js"></script>
-<script type="text/javascript">
-myword = '';
-function highlight(hword){
-$('p').highlight(hword);
-};
-</script>
+    <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="js/jquery.highlight-3.js"></script>
+    <script type="text/javascript">
+	myword = '';
+	function highlight(hword){
+	    $('p').highlight(hword);
+	};
+    </script>
+    <script type="text/javascript" src="js/bookmark.js"></script>
+    
+
 <STYLE TYPE="text/css">
 /*JS highlighting style*/
 .highlight { background-color: yellow }
@@ -25,6 +28,7 @@ $('p').highlight(hword);
 </head>
 <body>
 <div style=max-width:1024px>
+<div id="bookmark"></div>
 <p class="headline"><img src="images/h_intro.png" width="265" height="44" class="banner">1. Introduction to First Aid</p>
   <p><span class="headline"><img src="images/intro_1.jpg" width="195" height="270" class="floatright"></span><img src="images/a_note.png" width="22" height="22"> Principles of first aid<br>
     <img src="images/a_note.png" width="22" height="22"> Legal issues in first aid<br>

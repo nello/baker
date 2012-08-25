@@ -36,8 +36,9 @@ BODY {
 .banner {
 	position: absolute;
 	 top: 0px;
-	 right: 0px;
+	 right: 70px;
 	 -webkit-border-bottom-left-radius: 200;
+     -webkit-border-bottom-right-radius: 50;
 	 -webkit-box-shadow: 0px 2px 2px black;
 	}
 .close {
@@ -152,4 +153,74 @@ BODY {
 }
 .centre {
 	text-align: center;
+}
+
+
+/****************************************************************************************************
+ * Book Index
+ */
+#page.index .menu {
+    margin: 30px auto;
+    width: 670px;
+}
+
+#page.index .menu small {
+    display: block;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#page.index .menu ol {
+    list-style: none;
+    padding: 0;
+}
+
+#page.index .menu li {
+    position: relative;
+    background: transparent url(../gfx/dots-menu.png) repeat-x -1px;
+}
+
+#page.index .menu li a .count {
+    background: #ffffff url(../gfx/background.jpg);
+    padding-left: 3px;
+    position: absolute;
+    right: 0;
+}
+
+#page.index .menu li a {
+    background: #ffffff url(../gfx/background.jpg);
+    color: #000000;
+    text-decoration: none;
+    
+    -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+    transition: color 0.4s ease;
+}
+
+#page.index .menu li a:hover {
+    color: #b50303;
+}
+
+
+/****************************************************************************************************
+ * Bookmark icon
+ */
+#bookmark {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 34px;
+    height: 65px;
+    cursor: pointer;
+    background-image: url(../gfx/bookmark.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    z-index: 1337;
+}
+
+#bookmark.isSet {
+    background-position: -34px 0;
 }

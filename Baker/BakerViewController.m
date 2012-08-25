@@ -540,17 +540,18 @@
     scrollView.contentSize = CGSizeMake(pageWidth * totalPages, pageHeight);
 }
 - (void)setTappableAreaSize {
-    NSLog(@"• Set tappable area size");
-    
     int tappableAreaSize = screenBounds.size.width/16;
     if (screenBounds.size.width < 768) {
         tappableAreaSize = screenBounds.size.width/8;
     }
     
+    NSLog(@"• Set tappable area size to %d", tappableAreaSize);
+    
     upTapArea    = CGRectMake(tappableAreaSize, 0, pageWidth - (tappableAreaSize * 2), tappableAreaSize);
     downTapArea  = CGRectMake(tappableAreaSize, pageHeight - tappableAreaSize, pageWidth - (tappableAreaSize * 2), tappableAreaSize);
     leftTapArea  = CGRectMake(0, tappableAreaSize, tappableAreaSize, pageHeight - (tappableAreaSize * 2));
     rightTapArea = CGRectMake(pageWidth - tappableAreaSize, tappableAreaSize, tappableAreaSize, pageHeight - (tappableAreaSize * 2));
+    controlsTapArea = CGRectMake(pageWidth - (tappableAreaSize * 2), 0, tappableAreaSize * 2, tappableAreaSize * 2);
 }
 - (void)showPageDetails {
     NSLog(@"• Show page details for the book pages");
@@ -1632,7 +1633,9 @@
     // Swipe or scroll the page.
     if (!currentPageIsLocked)
     {
-        if (CGRectContainsPoint(upTapArea, tapPoint)) {
+        if (CGRectContainsPoint(controlsTapArea, tapPoint)) {
+            NSLog(@"    Tap CONTROLS /\\!");
+        } else if (CGRectContainsPoint(upTapArea, tapPoint)) {
             NSLog(@"    Tap UP /\\!");
             [self scrollUpCurrentPage:([self getCurrentPageOffset] - pageHeight + 50) animating:YES];
         } else if (CGRectContainsPoint(downTapArea, tapPoint)) {
